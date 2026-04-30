@@ -99,7 +99,7 @@ Para aprender más sobre Pull Requests enfocados en colaboraciones de respositor
 ---
 
 
-## **👩‍💻 Paso 1: Clonar y crear rama**
+## **Paso 1: Clonar y crear rama**
 
 
 ```
@@ -110,7 +110,7 @@ git checkout -b feature/nombre-rama
 
 ---
 
-### **🟣 Opción 1: Agregar un botón**
+**Opción 1: Agregar un botón**
 
 Modificar el HTML:
 
@@ -143,7 +143,7 @@ Y en CSS:
 
 ---
 
-### **🎨 Opción 2: Cambiar el fondo**
+**🎨 Opción 2: Cambiar el fondo**
 
 Modificar:
 
@@ -155,7 +155,7 @@ body {
 
 ---
 
-### **✏️ Opción 3: Cambiar textos**
+**✏️ Opción 3: Cambiar textos**
 
 ```
 <h1>Mi primer Pull Request 🚀</h1>
@@ -164,7 +164,7 @@ body {
 
 ---
 
-### **💅 Opción 4: Cambiar estilo del contenedor**
+**💅 Opción 4: Cambiar estilo del contenedor**
 
 ```
 .container {
@@ -175,7 +175,7 @@ body {
 
 ---
 
-## **💾 Paso 3: Commit y push**
+## **Paso 3: Commit y push**
 
 ```
 git add .
@@ -185,7 +185,7 @@ git push origin feature/rama
 
 ---
 
-## **🔀 Paso 4: Crear PR**
+## **Paso 4: Crear PR**
 
 En la página de GitHub:
 
@@ -195,7 +195,7 @@ En la página de GitHub:
 
 ---
 
-## **📝 Qué deben escribir en el PR**
+**Qué deben escribir en el PR**
 
 Agregar un título y descripción de lo que se hizo (en inglés)
 
@@ -211,7 +211,7 @@ Permite interacción básica en la UI
 ---
 
 
-## **🔀 Paso 5: Asignar a una persona para la revisión**
+## **Paso 5: Asignar a una persona para la revisión**
 
 normalmente lo hace alguien con responsabilidad sobre el código:
 
@@ -262,7 +262,7 @@ Tú haces click en:
 
 ---
 
-## **🎉 Paso 8: Ver resultado**
+## **Paso 8: Ver resultado**
 
 Todos hacen:
 
