@@ -33,16 +33,3 @@ p {
     font-size: 1.1rem;
     line-height: 1.6;
 }
-.btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #667eea;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #5a67d8;
-}
