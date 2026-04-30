@@ -87,11 +87,9 @@ Para aprender más sobre Pull Requests enfocados en colaboraciones de respositor
 
 ---
 
-# **🧪 Taller PR con tu proyecto base**
+# **🧪 Taller Pull Request**
 
 ## **🎯 Objetivo del ejercicio**
-
-Cada alumna deberá:
 
 - Crear una rama
 - Modificar la UI (botón, estilos, texto, etc.)
@@ -100,33 +98,15 @@ Cada alumna deberá:
 
 ---
 
-## **🧑‍🏫 Paso 0: Proyecto base (tú)**
-
-Usas exactamente este código que ya tienes 👌
-
-👉 Súbelo a GitHub como:
-
-```
-pr-workshop
-```
-
----
 
 ## **👩‍💻 Paso 1: Clonar y crear rama**
 
-Ellas:
 
 ```
-git clone <repo-url>
+git clone <repo>
 cd pr-workshop
-git checkout -b feature/nombre-alumna
+git checkout -b feature/nombre-rama
 ```
-
----
-
-## **🛠️ Paso 2: Cambios que pueden hacer (elige uno por alumna)**
-
-Aquí está la clave: dales opciones para que no todas hagan lo mismo.
 
 ---
 
@@ -195,43 +175,29 @@ body {
 
 ---
 
-### **✨ Opción 5 (pro level): Animación**
-
-```
-.container {
-    transition: transform 0.3s ease;
-}
-
-.container:hover {
-    transform: scale(1.05);
-}
-```
-
----
-
 ## **💾 Paso 3: Commit y push**
 
 ```
 git add .
 git commit -m "feat: agregar botón / cambiar estilos / etc"
-git push origin feature/nombre-alumna
+git push origin feature/rama
 ```
 
 ---
 
 ## **🔀 Paso 4: Crear PR**
 
-En GitHub:
+En la página de GitHub:
 
-- Click en **Compare & pull request**
+- Click en el botón verde que sale **Compare & pull request**
 - Base: main
-- Compare: su rama
+- Compare: feature-rama
 
 ---
 
 ## **📝 Qué deben escribir en el PR**
 
-Puedes pedirles esto:
+Agregar un título y descripción de lo que se hizo (en inglés)
 
 ```
 ## Cambios realizados
@@ -244,31 +210,49 @@ Permite interacción básica en la UI
 
 ---
 
-## **👀 Paso 5: Review (tu momento estrella)**
 
-Coméntales cosas como:
+## **🔀 Paso 5: Asignar a una persona para la revisión**
 
-- “¿Este color tiene suficiente contraste?”
-- “¿Podrías mejorar el nombre de la clase?”
-- “¿Qué pasaría en móvil?”
+normalmente lo hace alguien con responsabilidad sobre el código:
 
-👉 Esto conecta con UX/UI (te viene perfecto por tu perfil 😏)
+⸻
 
----
+🧑‍💻 Tech Lead / Senior Developer
 
-## **🔁 Paso 6: Correcciones**
+Es lo más común.
+	•	Revisa calidad del código
+	•	Valida arquitectura
+	•	Decide si se puede hacer merge
 
-Ellas:
+👉 En equipos pequeños/medianos suele ser la persona clave
 
-```
-git add .
-git commit -m "fix: mejorar estilos del botón"
-git push
-```
+⸻
 
-👉 Se actualiza el PR automáticamente
+👥 Code owners (responsables del código)
 
----
+En muchos repos hay personas asignadas a ciertas partes del proyecto.
+	•	Ej: alguien responsable del frontend, otro del backend
+	•	Solo ellos pueden aprobar PRs de esa parte
+
+⸻
+
+👨‍👩‍👧‍👦 Cualquier miembro del equipo (con permisos)
+
+En equipos más horizontales:
+	•	Cualquiera puede revisar
+	•	Pero suele requerirse mínimo 1 o 2 aprobaciones
+
+⸻
+
+🤖 Sistemas automáticos (en parte)
+
+No aceptan el PR directamente (normalmente), pero sí deciden si se puede aceptar:
+	•	Tests (CI/CD)
+	•	Linters
+	•	Checks automáticos
+
+## **👀 Paso 6: Review (lo revisa la persona asignada)**
+
 
 ## **✅ Paso 7: Merge**
 
@@ -280,7 +264,7 @@ Tú haces click en:
 
 ## **🎉 Paso 8: Ver resultado**
 
-Todas hacen:
+Todos hacen:
 
 ```
 git checkout main
@@ -290,13 +274,3 @@ git pull
 👉 Ven cómo el proyecto ahora tiene TODOS los cambios combinados
 
 ---
-
-## **🔥 Dinámica pro (muy recomendada)**
-
-Haz esto:
-
-- 2 alumnas cambian **el mismo CSS (background)**
-- Generas conflicto 💥
-- Lo resuelven contigo
-
-👉 Esto les vuela la cabeza (aprenden muchísimo)
